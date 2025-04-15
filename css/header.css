@@ -1,0 +1,126 @@
+body {
+  margin: 0px;
+  height: 200vh;
+  font-family: 'Yuji Syuku', serif;
+  background-color: black;
+  z-index: 0;
+}
+
+.header {
+  position: relative;
+  background: black;
+  display: flex;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 13vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../svg/nnnoise.svg');  
+  background-size: cover;  
+  background-repeat: repeat;  
+  opacity: 0.45;  
+  z-index: 1;  
+}
+
+.header-text-border {
+  position: relative;
+  border: 1px outset rgb(255, 255, 255);
+  color: grey;
+  display: flex;
+  width: 95vw;
+  height: 10vh;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+  padding: 0 30px;
+}
+
+.header-text-border-divs {
+  font-size: 24px;
+  color: white;
+}
+
+.wsh {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  text-align: center;
+}
+.acs {
+  left: 50%;
+  color: white;
+  margin-left: 30px;
+}
+
+
+.wsh p {
+  border-right: 1px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: 
+    typing 10s steps(17) infinite,
+    cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  0%   { width: 0 }
+  20%  { width: 100% }   /* Finished typing */
+  80%  { width: 100% }   /* Hold/pause */
+  100% { width: 0 }      /* Back to nothing */
+}
+
+.ban {
+  margin-right: 30px;
+  background: transparent;
+  transition: background 0.3s ease-in-out;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.ban a {
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Prevent visited links from changing color */
+.ban a:visited {
+  color: white; /* Ensures it stays the same color as the unvisited state */
+}
+
+.ban a:hover {
+  color: black;
+}
+
+.ban:hover {
+  background: white;
+}
+@media (max-width: 1024px){
+  .ban a {
+    color:transparent;
+
+  }
+  .acs {
+    display: none;
+  }
+}
+

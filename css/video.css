@@ -1,0 +1,65 @@
+.video-container {
+  width: 100%;
+  height: 87.4vh;
+  overflow: hidden;
+  margin-bottom:0px;
+}
+
+.video-container-video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.dmg-text {
+  background-color: transparent;
+  color: rgb(255, 255, 255, 0.85);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.warm-filter {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 200vh;
+  background: rgba(161, 120, 59, 0.4); /* Warm orange, adjust alpha to taste */
+  pointer-events: none; /* Makes it non-interactive */
+  z-index: 3; /* Make sure it’s above everything except maybe modal popups */
+  mix-blend-mode: overlay; /* Try 'soft-light', 'multiply', 'color' for different feels */
+}
+
+.blob {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background: black;
+  background-size: 400%;
+  animation: bg-animation 40s infinite alternate;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
