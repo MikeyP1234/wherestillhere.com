@@ -7,6 +7,10 @@ document.addEventListener("DOMContentLoaded", function () {
   if (isInstagram && video && fallback) {
     video.style.display = "none";
     fallback.style.display = "block";
-    fallback.style.height = window.innerHeight * .874;
+    const viddiv=document.querySelector(".video-container");
+    viddiv.style.height = window.innerHeight * .874;
   }
+  console.log(document.querySelector(".video-container"));
+
+  
 });
