@@ -18,36 +18,38 @@
   cursor: pointer;
   background: transparent;
 }
-.spotify{
+.spotify:hover{
   background-color: #1ED760;
   color:black;
 }
-.apple{
+.apple:hover{
   background-color: #FA2D48;
 }
-.sound{
+.sound:hover{
   background-image: linear-gradient(to bottom,
   #ff5500,
   #ff3300) ;
 }
-.insta{
+.insta:hover{
   background-image: linear-gradient(to bottom, 
   #8134AF,
   #DD2A7B,
   #F58529,
   #FEDA77)
 }
-.tube{
+.tube:hover{
   background-color: #CD201F;
 
 }
-.git{
+.git:hover{
   background-color: white;
   color:black;
 }
 .banc{
+  display:none;
+}
+.banc:hover{
   background-color: #629aa9;
-  display: none;
 }
 @media(max-width:1024px){
   .banc{
