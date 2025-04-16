@@ -11,6 +11,7 @@ window.addEventListener("load", function () {
         background-color:white; border-radius: 20px; padding:10px 30px;">
         Hold Here, Click Link.
       </a>
+      <p>Or just go to wherestillhere.com type shit</p>
     </div>
   </body>
     `;
