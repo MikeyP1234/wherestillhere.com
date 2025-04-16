@@ -4,14 +4,15 @@ window.addEventListener("load", function () {
   if (isInstagram) {
     // Clear all content
     document.documentElement.innerHTML = `
-      <body style="background-color: black; margin: 0; display: flex; align-items: center; justify-content: center; height: 100vh; color: white; font-family: sans-serif; text-align: center;">
-        <div>
-          <p>This site works better in Safari.</p>
-          <a href="https://wherestillhere.com" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: underline; font-size: 20px;">
-            👉 Tap here to open in Safari
-          </a>
-        </div>
-      </body>
+      <body style="background-color: black; margin: 0; display: flex; align-items: center; justify-content: center; height: 100vh; color: white; font-family: system; text-align: center;">
+    <div>
+      <p>I refuse to accommodate this poverty ass web browser </p>
+      <a href="https://wherestillhere.com" target="_blank" rel="noopener noreferrer" style="color: black; text-decoration: none; font-size: 40px; 
+        background-color:white; border-radius: 20px; padding:10px 30px;">
+        Hold Here, Click Link.
+      </a>
+    </div>
+  </body>
     `;
   }
 });
