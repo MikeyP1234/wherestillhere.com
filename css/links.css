@@ -72,11 +72,11 @@
     color:white;
   }
   .sound:hover{
-    background-color: transparent;
+    background-image: none;
     color:white;
   }
   .insta:hover{
-    background-color: transparent;
+    background-image: none;
     color:white;
   }
   .tube:hover{
