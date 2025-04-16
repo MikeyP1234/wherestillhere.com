@@ -8,12 +8,4 @@ document.addEventListener("DOMContentLoaded", function () {
     video.style.display = "none";
     fallback.style.display = "block";
   }
-
-  // Lock height to initial viewport height
-  const vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-  
-  if (container) {
-    container.style.height = `calc(var(--vh, 1vh) * 100)`;
-  }
 });
