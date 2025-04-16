@@ -18,9 +18,6 @@
   cursor: pointer;
   background: transparent;
 }
-.music-link-item:active{
-  background-color: transparent;
-}
 .spotify:hover{
   background-color: #1ED760;
   color:black;
@@ -65,6 +62,31 @@
   }
   .anchor-list{
     height:55vh;
+  }
+  .spotify:hover{
+    background-color: transparent;
+    color:white;
+  }
+  .apple:hover{
+    background-color: transparent;
+    color:white;
+  }
+  .sound:hover{
+    background-color: transparent;
+    color:white;
+  }
+  .insta:hover{
+    background-color: transparent;
+    color:white;
+  }
+  .tube:hover{
+    background-color: transparent;
+    color:white;
+  
+  }
+  .git:hover{
+    background-color: transparent;
+    color:white;
   }
 
 }
