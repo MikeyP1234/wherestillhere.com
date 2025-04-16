@@ -32,11 +32,13 @@
   
   </div>
   <div class="video-container">
-    <video class="video-container-video" muted loop autoplay playsinline style="width: 100%;" src="https://wherestillhere.com/pics/P1010250.mp4"></video>
+    <video id="heroVideo" class="video-container-video" muted loop autoplay playsinline style="width: 100%;">
+      <source src="pics/P1010250.mp4" type="video/mp4">
+    </video>
+    <img id="videoFallback" src="pics/P1010250-0.jpg" alt="DAMAGE GOOD visual" style="width: 100%; display: none;">
+    
     <div class="overlay-text">
-      <div class="dmg-text">
-        DAMAGE GOOD
-      </div>
+      <div class="dmg-text">DAMAGE GOOD</div>
     </div>
   </div>
   <div class="autumn">
@@ -45,7 +47,7 @@
         <div class="link-portion">Links and Media </div>  
       </div>
       <div class="anchor-list">
-        <a class="music-link-item spotify" href="https://www.youtube.com/watch?v=w9xKj5PsCnI">Spotify</a>
+        <a class="music-link-item spotify" href="https://www.youtube.com/watch?v=w9xKj5PsCnI" >Spotify</a>
         <a class="music-link-item apple" href="https://www.youtube.com/watch?v=w9xKj5PsCnI">Apple Music</a>
         <a class="music-link-item sound" href="https://soundcloud.com/wherestillhere?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">Soundcloud</a>
         <a class="music-link-item insta" href="https://www.instagram.com/wherestillhere/">Instagram</a>
@@ -67,6 +69,6 @@
 
   </div>
 
-  
+  <script src="scripts/insta-work-around.js" defer></script>
 </body>
 </html>
