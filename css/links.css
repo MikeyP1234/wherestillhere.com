@@ -18,6 +18,9 @@
   cursor: pointer;
   background: transparent;
 }
+.music-link-item:active{
+  background-color: transparent;
+}
 .spotify:hover{
   background-color: #1ED760;
   color:black;
