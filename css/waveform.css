@@ -25,3 +25,8 @@
     transform: translateX(-100vw);
   }
 }
+@media(max-width: 768px){
+  .waveform-img {
+    display:none;
+  }
+}
